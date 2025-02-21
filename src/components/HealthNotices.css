@@ -1,0 +1,110 @@
+/* HealthNotices.css */
+.health-dashboard-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('img6.webp') no-repeat center center;  /* Different background image */
+    background-size: cover;
+    padding: 20px;
+}
+
+.health-content {
+    background: rgba(17, 16, 16, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.health-content h2 {
+    font-size: 2.5rem;
+    color: #f9f4e4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+}
+
+.notice-input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.notice-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #f9f4e4;
+    font-size: 1rem;
+}
+
+.notice-input::placeholder {
+    color: rgba(249, 244, 228, 0.5);
+}
+
+.notice-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.notice-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.notices-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notice-item {
+    background: linear-gradient(rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.5));
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #f9f4e4;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.notice-item:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .health-content {
+        padding: 20px;
+    }
+
+    .health-content h2 {
+        font-size: 2rem;
+    }
+
+    .notice-input-group {
+        flex-direction: column;
+    }
+
+    .notice-input,
+    .notice-button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .notice-item {
+        font-size: 0.9rem;
+    }
+}

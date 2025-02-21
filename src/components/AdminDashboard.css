@@ -1,0 +1,151 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Body with a different background image */
+  .dashboard-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('img4.avif') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+  }
+  
+  .dashboard-content {
+    background: rgba(17, 16, 16, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    
+  }
+
+  .dashboard-content h1 {
+    font-size: 2.0rem;
+    color: #f9f4e4;  /* Consistent white text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+  }
+  
+  /* Card for individual features */
+  .card {
+    background: linear-gradient(rgba(60, 60, 60, 0.3), rgba(60, 60, 60, 0.5));
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Card hover effect */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Heading within card */
+  .card h3 {
+    font-size: 1.5rem;
+    color: #f9f4e4; /* Maintain white text */
+    margin-bottom: 10px;
+  }
+  
+  /* Description in card */
+  .card p {
+    font-size: 1rem;
+    color: #dcdcdc;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styles */
+  .button-blue, .button-green {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Blue Button */
+  .button-blue {
+    background-color: #007bff; /* Blue tone for meal plan */
+    color: white;
+  }
+  
+  .button-blue:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);
+  }
+  
+  /* Green Button */
+  .button-green {
+    background-color: #28a745; /* Green tone for health notices */
+    color: white;
+  }
+  
+  .button-green:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 30px;
+    }
+  
+    .container h1 {
+      font-size: 2rem;
+    }
+  
+    .card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .card p {
+      font-size: 0.9rem;
+    }
+  
+    .button-blue, .button-green {
+      font-size: 0.9rem;
+    }
+  }
+  /* Additional styles for meal plan */
+  .meal-plan-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .meal-input-group {
+    margin: 15px 0;
+  }
+  
+  .input-button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .meal-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #f9f4e4;
+  }
+  
+  .meal-input::placeholder {
+    color: rgba(249, 244, 228, 0.5);
+  }
