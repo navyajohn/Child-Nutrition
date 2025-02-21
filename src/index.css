@@ -1,0 +1,20 @@
+/* src/index.css */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+h2, h4 {
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea, input {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+}
